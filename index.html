@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="quoteController.js"></script>
+  <link rel="stylesheet" type="text/css" href="quoteController.css">
+</head>
+
+<body>
+    <div id="quoteForm">
+      <form>
+
+        Source
+        <select>
+          <option id="source" value="mastermindsofprogramming">Masterminds of Programming</option>
+        </select>
+        <br>
+        <br>
+
+
+
+        Person
+        <select>
+          <option id="person" value="bjarne">Bjarne Stroustrup</option>
+        </select>
+        <br>
+        <br>
+
+        Quote
+        <input id="quote" type="text" height="1000px">
+        <br>
+        <button type="button" onclick="storeQuote(document.getElementById('source').value,
+                document.getElementById('person').value,
+                document.getElementById('quote').value)">
+
+                Submit
+
+              </button>
+      </form>
+  </div>
+</body>
+
+</html>
